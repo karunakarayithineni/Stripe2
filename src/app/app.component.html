@@ -1,0 +1,16 @@
+<h1>StripePayment Details!</h1>
+<form novalidate (ngSubmit)="createToken()" [formGroup]="stripeTest">
+  
+  <h4>
+
+  </h4><ngx-stripe-card>
+    [options]="cardOptions"
+    [elementsOptions]="elementsOptions"
+  </ngx-stripe-card>
+  <h4>
+
+  </h4>
+  <button type="submit">
+    Pay
+  </button>
+</form>
